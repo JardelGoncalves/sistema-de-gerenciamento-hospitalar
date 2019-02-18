@@ -6,7 +6,7 @@ use PDO;
 use Repository\BaseRepository;
 use Database\Connection;
 
-class UsuarioRepository implements BaseRepository
+final class UsuarioRepository implements BaseRepository
 {
 
   /**
@@ -95,7 +95,7 @@ class UsuarioRepository implements BaseRepository
   * Remove o usuário caso exista no banco de dados. O status da operação
   * é retornado.
   */
-  public static function delete(int $id) : bool
+  public static function delete(int $id, int $id_s = null) : bool
   {
     $conn = new Connection();
 

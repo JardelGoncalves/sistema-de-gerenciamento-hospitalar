@@ -10,14 +10,14 @@ interface BaseRepository
   *
   * @return  bool
   */
-  public static function save( array $data ):bool;
+  public static function save( array $data ) : bool;
 
   /**
   * Retorna um array com outro(s) array(s) contendo os dados.
   *
   * @return   array
   */
-  public static function findAll():array;
+  public static function findAll() : array;
 
   /**
   * Retorna um determinado dado cadastrado em uma tabela do banco de dados.
@@ -26,7 +26,7 @@ interface BaseRepository
   *
   * @return   array
   */
-  public static function findById(int $id, int $id_s = null):array;
+  public static function findById(int $id, int $id_s = null) : array;
 
   /**
   * Atualiza um determinado recurso no banco de dados.
@@ -34,15 +34,16 @@ interface BaseRepository
   *
   * @return  bool
   */
-  public static function update(array $data):bool;
+  public static function update(array $data) : bool;
 
   /**
   * Remove um determinado recurso do banco de dados.
   * @param   int   $id  Identificador do recurso.
+  * @param   int   $id_s Identifcador secundário (opcional) para tabelas com duas colunas como PK.
   *
   * @return  bool
   */
-  public static function delete(int $id):bool;
+  public static function delete(int $id, int $id_s = null) : bool;
 }
 
  ?>
