@@ -16,8 +16,12 @@
     </style>
   </head>
   <body style="background:#f3f3f3">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="">SGH</a>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="">
+        <span style="font-size: 24px; color: #5094f5;">
+          <i class="fas fa-heartbeat"></i>
+        </span>
+        </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>

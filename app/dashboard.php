@@ -18,10 +18,10 @@ require 'include/page/head.php';
 
 <div class="col-md-8 offset-md-2  col-sm-12" style="margin-top:10%">
   <div class="row">
-    <div class="col-md-4 col-sm-12" style="margin-top:10px">
+    <div class="col-md-3 col-sm-12" style="margin-top:10px">
       <div class="card" style="background:#d14846">
         <div class="card-body text-center">
-          <span style="font-size: 96px; color: white;">
+          <span style="font-size: 50px; color: white;">
             <i class="fas fa-user-injured"></i>
           </span>
           <h2 style="margin-top:-10px; color:white">
@@ -31,10 +31,10 @@ require 'include/page/head.php';
       </div>
     </div>
 
-    <div class="col-md-4 col-sm-12" style="margin-top:10px">
+    <div class="col-md-3 col-sm-12" style="margin-top:10px">
       <div class="card" style="background:#3d97eb">
         <div class="card-body text-center">
-          <span style="font-size: 96px; color: white;">
+          <span style="font-size: 50px; color: white;">
             <i class="fas fa-user-md"></i>
           </span>
           <h2 style="margin-top:-10px; color:white">
@@ -44,10 +44,10 @@ require 'include/page/head.php';
       </div>
     </div>
 
-    <div class="col-md-4 col-sm-12" style="margin-top:10px">
+    <div class="col-md-3 col-sm-12" style="margin-top:10px">
       <div class="card" style="background:#d5df38">
         <div class="card-body text-center">
-          <span style="font-size: 96px; color: white;">
+          <span style="font-size: 50px; color: white;">
             <i class="fas fa-calendar-check"></i>
           </span>
           <h2 style="margin-top:-10px; color:white">
@@ -57,10 +57,10 @@ require 'include/page/head.php';
       </div>
     </div>
 
-    <div class="col-md-4 col-sm-12" style="margin-top:10px">
+    <div class="col-md-3 col-sm-12" style="margin-top:10px">
       <div class="card" style="background:#66d157">
         <div class="card-body text-center">
-          <span style="font-size: 96px; color: white;">
+          <span style="font-size: 50px; color: white;">
             <i class="fas fa-file-invoice-dollar"></i>
           </span>
           <h2 style="margin-top:-10px; color:white">
