@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="200" src="/app/assets/img/logo.png">
+  <img width="400" src="/app/assets/img/logo.png">
 </p>
 
 Simples aplicativo para gerencimento de informações do hospital como cadastro de médico, cadastro de pacientes, cadstro de planos e gerenciar consultas (marcar, desmarcar e visualizar).
