@@ -40,4 +40,7 @@ CREATE TABLE consultas (
   medico_id INTEGER NOT NULL,
   data_marcada TIMESTAMP NOT NULL,
   PRIMARY KEY (paciente_id, medico_id)
-)
+);
+
+INSERT INTO usuarios(nome, email, senha)
+      VALUES ('admin', 'admin@example.com', '21232f297a57a5a743894a0e4a801fc3');
