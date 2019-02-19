@@ -74,6 +74,10 @@ final class PacienteRepository implements BaseRepository
   */
   public static function update(array $data) : bool
   {
+    if (!$data['id']) {
+      return false;
+    }
+    
     $conn = new Connection();
     $result = $conn->executeQuery( 'UPDATE pacientes
       SET nome = :NOME, cpf = :CPF, rua = :RUA, bairro = :BAIRRO,
