@@ -37,11 +37,7 @@ final class UsuarioRepository implements BaseRepository
   public static function findAll() : array
   {
     $conn = new Connection();
-
-    $result = $conn->executeQuery(
-      'SELECT id, nome, email FROM usuarios'
-    );
-
+    $result = $conn->executeQuery('SELECT id, nome, email FROM usuarios');
     return $result->fetchAll(PDO::FETCH_ASSOC);
   }
 
@@ -70,11 +66,12 @@ final class UsuarioRepository implements BaseRepository
   */
   public static function update(array $data) : bool
   {
-    $conn = new Connection();
+
     if (!$data['id']) {
       return false;
     }
 
+    $conn = new Connection();
     $result = $conn->executeQuery(
       'UPDATE usuarios SET nome = :NOME, email = :EMAIL, senha = :SENHA WHERE id = :ID', array(
         ':ID' => $data['id'],
