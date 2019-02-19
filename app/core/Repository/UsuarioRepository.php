@@ -55,7 +55,8 @@ final class UsuarioRepository implements BaseRepository
         ':ID' => $id
     ));
 
-    return $result->fetchAll(PDO::FETCH_ASSOC)[0];
+    $result = $result->fetchAll(PDO::FETCH_ASSOC);
+    return isset($result[0]) ? $result[0] : array();
   }
 
   /**
@@ -124,8 +125,8 @@ final class UsuarioRepository implements BaseRepository
         ':EMAIL' => $email,
         ':SENHA' => md5($senha)
     ));
-
-    return $result->fetchAll(PDO::FETCH_ASSOC)[0];
+    $result = $result->fetchAll(PDO::FETCH_ASSOC);
+    return isset($result[0]) ? $result[0] : array();
   }
 
 }

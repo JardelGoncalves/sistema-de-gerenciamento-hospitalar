@@ -63,7 +63,8 @@ final class PacienteRepository implements BaseRepository
       ':ID' => $id
     ));
 
-    return $result->fetchAll(PDO::FETCH_ASSOC)[0];
+    $result = $result->fetchAll(PDO::FETCH_ASSOC);
+    return isset($result[0]) ? $result[0] : array();
   }
 
   /**
@@ -77,7 +78,7 @@ final class PacienteRepository implements BaseRepository
     if (!$data['id']) {
       return false;
     }
-    
+
     $conn = new Connection();
     $result = $conn->executeQuery( 'UPDATE pacientes
       SET nome = :NOME, cpf = :CPF, rua = :RUA, bairro = :BAIRRO,

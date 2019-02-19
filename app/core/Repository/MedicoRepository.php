@@ -52,7 +52,8 @@ final class MedicoRepository implements BaseRepository
     $result = $conn->executeQuery('SELECT * FROM medicos WHERE id = :ID LIMIT 1', array(
       ':ID' => $id
     ));
-    return $result->fetchAll(PDO::FETCH_ASSOC)[0];
+    $result = $result->fetchAll(PDO::FETCH_ASSOC);
+    return isset($result[0]) ? $result[0] : array();
   }
 
   /**

@@ -54,7 +54,8 @@ final class ConsultaRepository implements BaseRepository
         ':ID' => $id,
         ':ID_S' => $id_s
     ));
-    return $result->fetchAll(PDO::FETCH_ASSOC)[0];
+    $result = $result->fetchAll(PDO::FETCH_ASSOC);
+    return isset($result[0]) ? $result[0] : array();
   }
 
   /**
