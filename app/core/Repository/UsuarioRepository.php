@@ -59,7 +59,7 @@ final class UsuarioRepository implements BaseRepository
         ':ID' => $id
     ));
 
-    return $result->fetchAll(PDO::FETCH_ASSOC);
+    return $result->fetchAll(PDO::FETCH_ASSOC)[0];
   }
 
   /**
@@ -128,7 +128,7 @@ final class UsuarioRepository implements BaseRepository
         ':SENHA' => md5($senha)
     ));
 
-    return $result->fetchAll(PDO::FETCH_ASSOC);
+    return $result->fetchAll(PDO::FETCH_ASSOC)[0];
   }
 
 }
