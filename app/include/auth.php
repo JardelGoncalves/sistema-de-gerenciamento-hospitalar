@@ -9,7 +9,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
   if ($user) {
     $_SESSION['usuario'] = $user['id'];
-    header('location: dashboard.php');
+    header('location: /dashboard');
   }
   else {
     $_SESSION['erro'] = 'Email ou Senha inválida!';
