@@ -20,6 +20,10 @@ function file_include(array $url) : string {
       // verifica se ele é o ultimo nivel da url
       if($key === count($url) - 1) {
         return $file; // retorna o caminho
+      } else {
+        // caso não seja o ultimo nivel da url, incrementa a
+        // variável $PATH
+        $PATH .= $value . '/';
       }
       // caso o arquivo não exista, verifica se é um diretório
     } elseif (is_dir($PATH . $value)) {
