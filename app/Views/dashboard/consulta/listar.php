@@ -19,6 +19,7 @@ $consultas = ConsultaRepository::findAll();
   </div>
   <?
   require 'include/page/sucesso.php';
+  require 'include/page/erro.php';
   ?>
   <div class="row">
   <?
@@ -33,7 +34,7 @@ $consultas = ConsultaRepository::findAll();
         <div class="card-body">
           <h5 class="card-title"><?echo $paciente['nome'];?></h5>
           <p><? echo date('d/m/Y H:i:s', strtotime($consulta['data_marcada']));?></p>
-          <a href="/dashboard/consulta" class="btn btn-danger">Desmarcar consulta</a>
+          <a href="/dashboard/consulta/remover?paciente_id=<? echo $consulta['paciente_id']; ?>&medico_id=<? echo $consulta['medico_id']; ?>" class="btn btn-danger">Desmarcar consulta</a>
         </div>
       </div>
   <?
