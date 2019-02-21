@@ -26,7 +26,7 @@ require 'include/page/head.php';
 ?>
 <div class="col-md-8 offset-md-2 col-sm-12" style="margin-top:80px">
   <div style="margin-bottom:20px">
-    <h2>Pesquisar Paciente</h2>
+    <h2>Marcar consulta</h2>
     <hr>
   </div>
   <? require 'include/page/erro.php'; ?>
