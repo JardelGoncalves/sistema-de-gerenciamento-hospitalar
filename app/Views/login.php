@@ -19,16 +19,8 @@ require 'include/auth.php';
             <div class="text-center" style="margin-bottom:20px">
               <img class="img-fluid" width="300" src="/assets/img/logo.png">
             </div>
-
             <?
-            if($_SESSION['erro']) {
-            ?>
-            <div class="alert alert-danger" role="alert">
-              <?echo $_SESSION['erro'];?>
-            </div>
-            <?
-            };
-            unset($_SESSION['erro']);
+              require 'include/page/erro.php';
             ?>
             <form method="post">
               <div class="form-group">
