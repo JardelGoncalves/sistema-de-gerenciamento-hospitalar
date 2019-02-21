@@ -9,7 +9,14 @@ require 'include/page/head.php';
 ?>
 
 <div class="col-md-8 offset-md-2 col-sm-12" style="margin-top:80px">
-  <?require 'include/page/sucesso.php';?>
+  <div style="margin-bottom:20px">
+    <h2>Planos</h2>
+    <hr>
+  </div>
+  <?
+  require 'include/page/sucesso.php';
+  require 'include/page/erro.php';
+  ?>
   <div class="row">
     <?
     foreach ($planos as $plano) {
