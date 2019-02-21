@@ -121,6 +121,16 @@ final class PacienteRepository implements BaseRepository
     return true;
   }
 
+  public static function findByName(string $nome) : array
+  {
+    $conn = new Connection();
+    $result = $conn->executeQuery('SELECT * FROM pacientes WHERE lower(nome) LIKE lower(:NOME)', array(
+      ':NOME' => "%".$nome."%"
+    ));
+
+    return $result->fetchAll(PDO::FETCH_ASSOC);
+  }
+
 }
 
 ?>
