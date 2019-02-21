@@ -39,7 +39,7 @@ CREATE TABLE consultas (
   paciente_id INTEGER NOT NULL,
   medico_id INTEGER NOT NULL,
   data_marcada TIMESTAMP NOT NULL,
-  PRIMARY KEY (paciente_id, medico_id)
+  PRIMARY KEY (paciente_id, medico_id, data_marcada)
 );
 
 INSERT INTO usuarios(nome, email, senha)
