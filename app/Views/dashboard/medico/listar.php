@@ -37,7 +37,7 @@ require 'include/page/head.php';
             <td><?echo $medico['crm']; ?></td>
             <td><?echo $medico['Especialidades']; ?></td>
             <td>
-              <a class="btn btn-danger" href="/dashboard/medico/remover?<?echo $medico['id']; ?>">
+              <a class="btn btn-danger" href="/dashboard/medico/remover?id=<?echo $medico['id']; ?>">
                 <i class="fas fa-trash"></i>
               </a>
             </td>
