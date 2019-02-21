@@ -92,8 +92,8 @@ final class ConsultaRepository implements BaseRepository
     $conn = new Connection();
     $result = $conn->executeQuery(
       'DELETE FROM consultas WHERE paciente_id = :ID AND medico_id = :ID_S', array(
-        ':ID' => $data['paciente_id'],
-        ':ID_S' => $data['medico_id']
+        ':ID' => $id,
+        ':ID_S' => $id_s
     ));
     if ($result->rowCount() == 0) {
       return false;
